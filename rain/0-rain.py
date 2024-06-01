@@ -3,8 +3,6 @@
 """
 rain
 """
-
-
 def rain(walls):
     if not walls:
 	 return 0
