@@ -2,15 +2,16 @@
 """
 Rainwater Trapping Module
 
-This module contains a function to calculate the amount of rainwater that can be 
-trapped between walls after it rains. The walls are represented by a list of 
-non-negative integers where each integer represents the height of a wall with 
+This module contains a function to calculate the amount of rainwater that can
+trapped between walls after it rains. The walls are represented by a list of
+non-negative integers where each integer represents the height of a wall with
 a unit width of 1.
 
 Function:
-    - rain(walls): Returns the total amount of rainwater retained given a list 
+    - rain(walls): Returns the total amount of rainwater retained given a list
       of wall heights.
 """
+
 
 def rain(walls):
     """
