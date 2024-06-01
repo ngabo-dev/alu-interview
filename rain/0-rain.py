@@ -1,11 +1,35 @@
 #!/usr/bin/python3
+"""
+Rainwater Trapping Module
 
+This module contains a function to calculate the amount of rainwater that can be trapped 
+between walls after it rains. The walls are represented by a list of non-negative integers 
+where each integer represents the height of a wall with a unit width of 1.
+
+Function:
+    - rain(walls): Returns the total amount of rainwater retained given a list of wall heights.
 """
-rain
-"""
+
 def rain(walls):
+    """
+    Calculate the total amount of rainwater that can be trapped between the walls.
+
+    Parameters:
+    - walls (List[int]): A list of non-negative integers representing the heights of the walls.
+
+    Returns:
+    - int: The total amount of rainwater retained.
+
+    Example:
+    >>> walls = [0, 1, 0, 2, 0, 3, 0, 4]
+    >>> print(rain(walls))
+    6
+    >>> walls = [2, 0, 0, 4, 0, 0, 1, 0]
+    >>> print(rain(walls))
+    6
+    """
     if not walls:
-	 return 0
+        return 0
     
     n = len(walls)
     left_max = [0] * n
@@ -28,7 +52,7 @@ def rain(walls):
     
     return water_retained
 
-# Testing the function
+# Example usage
 if __name__ == "__main__":
     walls = [0, 1, 0, 2, 0, 3, 0, 4]
     print(rain(walls))  # Output: 6
