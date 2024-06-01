@@ -1,11 +1,12 @@
 #!/usr/bin/python3
-
 """
 rain
 """
+
+
 def rain(walls):
     if not walls:
-        return 0
+	 return 0
     
     n = len(walls)
     left_max = [0] * n
