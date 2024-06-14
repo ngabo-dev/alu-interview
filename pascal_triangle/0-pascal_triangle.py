@@ -3,6 +3,7 @@
 0. Pascal's Triangle
 """
 
+
 def pascal_triangle(n):
   """
   This function generates a list of lists representing Pascal's Triangle up to level n.
