@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+"""
+0. Pascal's Triangle
+"""
+
 def pascal_triangle(n):
   """
   This function generates a list of lists representing Pascal's Triangle up to level n.
@@ -25,7 +29,7 @@ def pascal_triangle(n):
       if j == 0 or j == i:
         current_row.append(1)  # First and last elements are always 1
       else:
-        element = previous_row[j-1] + previous_row[j]  # Sum elements from previous row
+        element = previous_row[j-1] + previous_row[j]
         current_row.append(element)
     triangle.append(current_row)
 
