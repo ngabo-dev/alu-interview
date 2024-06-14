@@ -1,34 +1,20 @@
 #!/usr/bin/python3
 """
-0. Pascal's Triangle
+Pascal's Triangle
 """
 
 
 def pascal_triangle(n):
-  """
-  Generates a list of lists representing Pascal's Triangle up to level n.
-
-  Args:
-      n: An integer representing the desired level of Pascal's Triangle.
-
-  Returns:
-      A list of lists containing the elements of Pascal's Triangle for level n.
-      An empty list if n is less than or equal to 0.
-  """
-  if n <= 0:
-    return []
-
-  triangle = [[1]]
-
-  for i in range(1, n):
-    previous_row = triangle[i-1]
-    current_row = []
-    for j in range(i + 1):
-      if j == 0 or j == i:
-        current_row.append(1)
-      else:
-        element = previous_row[j-1] + previous_row[j]
-        current_row.append(element)
-    triangle.append(current_row)
-
-  return triangle
+    """Create a function def pascal_triangle(n): that returns a list of lists
+    of integers representing the Pascal’s triangle of n
+    """
+    result = []
+    if n > 0:
+        for i in range(1, n + 1):
+            level = []
+            C = 1
+            for j in range(1, i + 1):
+                level.append(C)
+                C = C * (i - j) // j
+            result.append(level)
+    return result
