@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 def pascal_triangle(n):
   """
   This function generates a list of lists representing Pascal's Triangle up to level n.
