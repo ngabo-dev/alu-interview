@@ -14,10 +14,10 @@ def pascal_triangle(n):
   Returns:
       A list of lists containing the elements of Pascal's Triangle for level n.
       An empty list if n is less than or equal to 0.
-  """  
+  """
 
-  if n <= 0:
-    return []
+	if n <= 0:
+    		return []
 
   triangle = [[1]]  # Initialize the triangle with the first row (always [1])
 
